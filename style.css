@@ -15,8 +15,8 @@ html, body {
     scroll-snap-align: start;
     justify-content: center;
     align-items: center;
-    display: none; /* Standardmäßig ausblenden */
     flex-direction: column;
+    display: none; /* Standardmäßig ausblenden */
 }
 
 img {
