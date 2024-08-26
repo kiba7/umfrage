@@ -25,13 +25,13 @@ img {
     object-fit: contain;
 }
 
-@media screen and (max-aspect-ratio: 1/1) {
+@media screen and (orientation: portrait) {
     .hochkant {
         display: flex; /* Hochformatbilder anzeigen */
     }
 }
 
-@media screen and (min-aspect-ratio: 1/1) {
+@media screen and (orientation: landscape) {
     .quer {
         display: flex; /* Querformatbilder anzeigen */
     }
