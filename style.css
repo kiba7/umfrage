@@ -6,7 +6,7 @@ html, body {
 
 .scroll-container {
     height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
 
@@ -15,24 +15,25 @@ html, body {
     scroll-snap-align: start;
     justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
-    display: flex; /* Standardmäßig anzeigen */
 }
 
 img {
     max-width: 100%;
     max-height: 100vh;
     object-fit: contain;
+    display: none; /* Standardmäßig ausblenden */
 }
 
 @media screen and (orientation: portrait) {
-    .quer {
-        display: none; /* Querformatbilder ausblenden */
+    .hochkant {
+        display: block; /* Hochformatbilder anzeigen */
     }
 }
 
 @media screen and (orientation: landscape) {
-    .hochkant {
-        display: none; /* Hochformatbilder ausblenden */
+    .quer {
+        display: block; /* Querformatbilder anzeigen */
     }
 }
