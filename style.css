@@ -1,33 +1,19 @@
-.scroll-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
 .scroll-section {
     height: 100vh;
     scroll-snap-align: start;
-    display: flex;
+    display: none; /* Standardmäßig ausblenden */
     justify-content: center;
     align-items: center;
-    margin: 0; /* Entfernt Abstände zwischen den Sektionen */
-}
-
-img {
-    max-width: 100%;
-    max-height: 100vh;
-    object-fit: contain;
-    display: none; /* Standardmäßig ausblenden */
 }
 
 @media screen and (orientation: portrait) {
     .hochkant {
-        display: block;
+        display: flex; /* Flexbox aktivieren */
     }
 }
 
 @media screen and (orientation: landscape) {
     .quer {
-        display: block;
+        display: flex; /* Flexbox aktivieren */
     }
 }
