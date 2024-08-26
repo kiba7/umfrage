@@ -13,10 +13,10 @@ html, body {
 .scroll-section {
     height: 100vh;
     scroll-snap-align: start;
-    display: none; /* Standardmäßig ausblenden */
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    display: flex; /* Standardmäßig anzeigen */
 }
 
 img {
@@ -26,13 +26,13 @@ img {
 }
 
 @media screen and (orientation: portrait) {
-    .hochkant {
-        display: flex; /* Flexbox aktivieren */
+    .quer {
+        display: none; /* Querformatbilder ausblenden */
     }
 }
 
 @media screen and (orientation: landscape) {
-    .quer {
-        display: flex; /* Flexbox aktivieren */
+    .hochkant {
+        display: none; /* Hochformatbilder ausblenden */
     }
 }
