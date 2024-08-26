@@ -16,7 +16,7 @@ html, body {
     display: none; /* Standardmäßig ausblenden */
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Flex-Richtung für zentrierte Anzeige */
+    flex-direction: column;
 }
 
 img {
