@@ -22,12 +22,10 @@ img {
     max-width: 100%;
     max-height: 100vh;
     object-fit: contain;
+    display: none; /* Standardmäßig ausblenden */
 }
 
 @media screen and (orientation: portrait) {
-    .quer {
-        display: none;
-    }
     .hochkant {
         display: block;
     }
@@ -36,8 +34,5 @@ img {
 @media screen and (orientation: landscape) {
     .quer {
         display: block;
-    }
-    .hochkant {
-        display: none;
     }
 }
