@@ -23,17 +23,16 @@ img {
     max-width: 100%;
     max-height: 100vh;
     object-fit: contain;
-    display: none; /* Standardmäßig ausblenden */
 }
 
 @media screen and (orientation: portrait) {
-    .hochkant {
-        display: block; /* Hochformatbilder anzeigen */
+    .quer {
+        display: none; /* Querformatbilder ausblenden */
     }
 }
 
 @media screen and (orientation: landscape) {
-    .quer {
-        display: block; /* Querformatbilder anzeigen */
+    .hochkant {
+        display: none; /* Hochformatbilder ausblenden */
     }
 }
