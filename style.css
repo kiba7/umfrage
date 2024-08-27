@@ -27,12 +27,12 @@ img {
 
 @media screen and (orientation: portrait) {
     .quer {
-        display: none; /* Querformatbilder ausblenden */
+        display: none; / Querformatbilder ausblenden /
     }
 }
 
 @media screen and (orientation: landscape) {
     .hochkant {
-        display: none; /* Hochformatbilder ausblenden */
+        display: none; / Hochformatbilder ausblenden */
     }
 }
