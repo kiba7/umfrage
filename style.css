@@ -97,8 +97,6 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100vh;
-    width: 100vw;
 }
 
 .images {
@@ -110,7 +108,6 @@ img {
 }
 
 .images-progress {
-    display: block;
     position: relative;
 }
 
@@ -140,6 +137,15 @@ img {
     border-radius: 50px;
     align-content: center;
     animation: progress-mobile 3000ms ease-in-out;
+}
+
+.arrow-animation {
+    position: absolute;
+    width: 30%;
+    height: 9.7%;
+    top: 88.8%;
+    left: 35%;
+    animation: float 3000ms infinite;
 }
 
 /*Zeile 150 die Zahl nach der Multiplikation ist die Prozentzahl*/
