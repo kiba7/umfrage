@@ -88,7 +88,7 @@ img {
         width: calc(13%);
     }
     100% {
-        width: calc(13% + 0.52% * 100)
+        width: calc(13% + 0.52% * 90)
     }
 }
 
@@ -133,7 +133,7 @@ img {
     font-family: Lilita, serif;
     position: absolute;
     background-color: #725dcf;
-    width: calc(13% + 0.52% * 100);
+    width: calc(13% + 0.52% * 90);
     height: 9.7%;
     top: 54%;
     left: 22%;
