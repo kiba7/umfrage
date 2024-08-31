@@ -147,7 +147,7 @@ img {
     font-family: Lilita, serif;
     position: absolute;
     background-color: #725dcf;
-    width: calc(13% + 0.4% * 100);
+    width: calc(13% + 0.4% * 90);
     height: 24%;
     top: 35%;
     left: 37%;
