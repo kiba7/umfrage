@@ -2,9 +2,6 @@ html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .scroll-container {
@@ -37,4 +34,129 @@ img {
     .hochkant {
         display: none; /* Hochformatbilder ausblenden */
     }
+}
+
+.arrow {
+    overflow: visible;
+    display: block;
+    position: absolute;
+    width: 250px;
+    left: calc(50% - 125px);
+    top: 81%;
+    max-width: 250px;
+    max-height: 100vh;
+    animation: float 1500ms ease-in-out infinite;
+}
+
+.hochkant .arrow {
+    overflow: visible;
+    display: block;
+    position: absolute;
+    width: 140px;
+    left: calc(50% - 70px);
+    top: 89%;
+    max-width: 250px;
+    max-height: 100vh;
+    animation: float 1500ms ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(+10px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+
+@keyframes progress {
+    0% {
+        width: calc(13%);
+    }
+    100% {
+        width: calc(13% + 0.4% * 100);
+    }
+}
+
+/*Zeile 91 die Zahl nach der Multiplikation ist die Prozentzahl*/
+@keyframes progress-mobile {
+    0% {
+        width: calc(13%);
+    }
+    100% {
+        width: calc(13% + 0.52% * 100)
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.images {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: max-content;
+    max-height: max-content;
+}
+
+.images-progress {
+    display: block;
+    position: relative;
+}
+
+.images-container {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    max-width: 911px;
+    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.svg-text {
+    fill: black;
+}
+
+/*Zeile 136 die Zahl nach der Multiplikation ist die Prozentzahl*/
+.progress-mobile {
+    font-family: Lilita, serif;
+    position: absolute;
+    background-color: #725dcf;
+    width: calc(13% + 0.52% * 100);
+    height: 9.7%;
+    top: 54%;
+    left: 22%;
+    border-radius: 50px;
+    align-content: center;
+    animation: progress-mobile 3000ms ease-in-out;
+}
+
+/*Zeile 150 die Zahl nach der Multiplikation ist die Prozentzahl*/
+.progress {
+    font-family: Lilita, serif;
+    position: absolute;
+    background-color: #725dcf;
+    width: calc(13% + 0.4% * 100);
+    height: 24%;
+    top: 35%;
+    left: 37%;
+    border-radius: 120px;
+    align-content: center;
+    animation: progress 3000ms ease-in-out;
+}
+
+@font-face {
+    font-family: Lilita;
+    src: url('./fonts/LilitaOne-Regular.ttf');
 }

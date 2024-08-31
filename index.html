@@ -7,38 +7,105 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="scroll-container">
-        <section class="scroll-section quer">
-            <a href="https://example.com/link1">
-                <img src="https://s20.directupload.net/images/240826/aih3kupq.png" alt="Querformat Bild 1">
-            </a>
-        </section>
-        <section class="scroll-section hochkant">
-            <a href="https://example.com/link1-portrait">
-                <img src="https://s20.directupload.net/images/240826/bq9mbx2i.png" alt="Hochformat Bild 1">
-            </a>
-        </section>
-        <section class="scroll-section quer">
-            <a href="https://example.com/link2">
-                <img src="https://s20.directupload.net/images/240826/ww229495.png" alt="Querformat Bild 2">
-            </a>
-        </section>
-        <section class="scroll-section hochkant">
-            <a href="https://example.com/link2-portrait">
-                <img src="https://s20.directupload.net/images/240826/e2wutmki.png" alt="Hochformat Bild 2">
-            </a>
-        </section>
-        <section class="scroll-section quer">
-            <a href="https://example.com/link3">
-                <img src="https://s20.directupload.net/images/240826/sq4cmdsh.png" alt="Querformat Bild 3">
-            </a>
-        </section>
-        <section class="scroll-section hochkant">
-            <a href="https://example.com/link3-portrait">
-                <img src="https://s20.directupload.net/images/240826/ezn2d5xh.png" alt="Hochformat Bild 3">
-            </a>
-        </section>
-    </div>
-    <script src="script.js"></script>
+<div class="scroll-container">
+    <section class="scroll-section quer">
+        <div class="container">
+            <div class="images">
+                <a href="https://masterfrage.info">
+                    <img src="https://s20.directupload.net/images/240829/n3n698k8.png" alt="Querformat Bild 1">
+                </a>
+            </div>
+            <div class="arrow">
+                <a href="#section2">
+                    <img src="images/lila_haken.png">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-section hochkant">
+        <div class="container">
+            <div class="images">
+                <a href="https://example.com/link1-portrait">
+                    <img src="https://s20.directupload.net/images/240829/us6fnjlc.png" alt="Hochformat Bild 1">
+                </a>
+            </div>
+            <div class="arrow">
+                <a href="#section2-mobile">
+                    <img src="images/lila_haken.png">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-section quer" id="section2">
+        <div class="container">
+            <div class="images">
+                <a href="https://example.com/link2">
+                    <img src="https://s20.directupload.net/images/240829/hkyb4dm5.png" alt="Querformat Bild 2">
+                </a>
+            </div>
+            <div class="arrow" onclick="ani()">
+                <a href="#section3">
+                    <img src="images/gruner_haken.png">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="scroll-section hochkant" id="section2-mobile">
+        <div class="container">
+            <div class="images">
+                <a href="https://example.com/link2-portrait">
+                    <img src="https://s20.directupload.net/images/240829/pj6zocty.png" alt="Hochformat Bild 2">
+                </a>
+                <div class="arrow" onclick="aniMobile()">
+                    <a href="#section3-mobile">
+                        <img src="images/gruner_haken.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="scroll-section quer" id="section3">
+        <div class="container">
+            <div class="images-progress">
+                <div>
+                    <a href="https://example.com/link3-portrait">
+                        <img src="https://s20.directupload.net/images/240829/r8ewicg5.png" alt="Querformat Bild 3">
+                    </a>
+                </div>
+                <div class="progress">
+                    <a href="https://example.com/link3-portrait">
+                        <svg height="50%" viewBox="0 0 56 18">
+<!--                            Zeile 80 die Zahl im text Tag-->
+                            <text class="svg-text" x="5" y="15">100%</text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="scroll-section hochkant" id="section3-mobile">
+        <div class="container">
+            <div class="images-progress">
+                <div>
+                    <a href="https://example.com/link3-portrait">
+                        <img src="https://s20.directupload.net/images/240829/wmgv5bki.png" alt="Hochformat Bild 3">
+                    </a>
+                </div>
+                <div class="progress-mobile">
+                    <a href="https://example.com/link3-portrait">
+                        <svg height="50%" viewBox="0 0 56 18">
+                            <!-- Zeile 101 die Zahl im text Tag-->
+                            <text class="svg-text" x="5" y="15">100%</text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="script.js"></script>
 </body>
 </html>
