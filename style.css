@@ -76,6 +76,7 @@ html, body {
     height: 9.3%;
     top: 54.05%;
     left: 22%;
+    border-bottom: 2px solid black;
     border-radius: 50px;
     align-content: center;
     animation: progress-mobile 3000ms ease-in-out;
