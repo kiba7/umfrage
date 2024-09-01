@@ -21,7 +21,7 @@ html, body {
     max-height: 88vh;
     object-fit: contain;
     width: auto;
-    height: auto; 
+    height: auto;
 }
 
 .image-arrow {
@@ -73,10 +73,9 @@ html, body {
     position: absolute;
     background-color: #725dcf;
     width: calc(13% + 0.52% * 90); /*Prozentsatz (Letzte Zahl) setzen*/
-    height: 9.3%;
-    top: 54.05%;
+    height: 9.1%;
+    top: 54.1%;
     left: 22%;
-    border-bottom: 2px solid black;
     border-radius: 50px;
     align-content: center;
     animation: progress-mobile 3000ms ease-in-out;
