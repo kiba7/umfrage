@@ -16,17 +16,9 @@ html, body {
     scroll-snap-type: y mandatory;
 }
 
-.scroll-section {
-    height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .image-site {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 95vh;
     object-fit: contain;
     width: auto;
     height: auto; 
@@ -50,13 +42,6 @@ html, body {
     top: 81%;
     left: 42.5%;
     animation: float 3000ms infinite;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .images {
@@ -117,6 +102,43 @@ html, body {
     align-content: center;
     animation: progress 3000ms ease-in-out;
 }
+
+/*IOS Support*/
+@supports (-webkit-touch-callout: none) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .scroll-section {
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
+@supports not (-webkit-touch-callout: none) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .scroll-section {
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
 
 /*Animationen*/
 @keyframes float {
