@@ -73,8 +73,8 @@ html, body {
     position: absolute;
     background-color: #725dcf;
     width: calc(13% + 0.52% * 90); /*Prozentsatz (Letzte Zahl) setzen*/
-    height: 9.3%;
-    top: 54.11%;
+    height: 9.4%;
+    top: 54%;
     left: 22%;
     border-radius: 50px;
     align-content: center;
