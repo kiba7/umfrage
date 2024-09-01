@@ -34,17 +34,3 @@ const observerMobile = new IntersectionObserver(entries => {
 });
 
 observerMobile.observe(document.querySelector('.progress-mobile'));
-
-function ani() {
-    const element = document.getElementsByClassName("progress")[0];
-    element.className = ''
-    void element.offsetWidth;
-    element.className = 'progress'
-}
-
-function aniMobile() {
-    const element = document.getElementsByClassName("progress-mobile")[0];
-    element.className = ''
-    void element.offsetWidth;
-    element.className = 'progress-mobile'
-}
