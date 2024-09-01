@@ -102,14 +102,16 @@ img {
     position: relative;
     height: 100vh;
     width: 100vw;
+    max-width: 100vw; 
+    overflow: hidden;
 }
 
 .images {
     position: relative;
-    height: 100vh;
-    width: 100vw;
-    max-width: max-content;
-    max-height: max-content;
+    height: 100%;
+    width: 100vh;
+    max-width: auto;
+    max-height: auto;
 }
 
 .images-progress {
@@ -162,4 +164,10 @@ img {
 @font-face {
     font-family: Lilita;
     src: url('./fonts/LilitaOne-Regular.ttf');
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 }
