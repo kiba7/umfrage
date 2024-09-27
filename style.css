@@ -72,7 +72,7 @@ html, body {
     font-family: Lilita, serif;
     position: absolute;
     background-color: #725dcf;
-    width: calc(13% + 0.52% * 90); /*Prozentsatz (Letzte Zahl) setzen*/
+    width: calc(13% + 0.52% * 4); /*Prozentsatz (Letzte Zahl) setzen*/
     height: 9.1%;
     top: 54.1%;
     left: 22%;
@@ -94,7 +94,7 @@ html, body {
     font-family: Lilita, serif;
     position: absolute;
     background-color: #725dcf;
-    width: calc(13% + 0.4% * 90); /*Prozentsatz (Letzte Zahl) setzen*/
+    width: calc(13% + 0.4% * 4); /*Prozentsatz (Letzte Zahl) setzen*/
     height: 24%;
     top: 35%;
     left: 37%;
@@ -158,7 +158,7 @@ html, body {
         width: calc(13%);
     }
     100% {
-        width: calc(13% + 0.4% * 90); /*Prozentsatz (Letzte Zahl) setzen*/
+        width: calc(13% + 0.4% * 4); /*Prozentsatz (Letzte Zahl) setzen*/
     }
 }
 
@@ -167,7 +167,7 @@ html, body {
         width: calc(13%);
     }
     100% {
-        width: calc(13% + 0.52% * 90) /*Prozentsatz (Letzte Zahl) setzen*/
+        width: calc(13% + 0.52% * 4) /*Prozentsatz (Letzte Zahl) setzen*/
     }
 }
 
